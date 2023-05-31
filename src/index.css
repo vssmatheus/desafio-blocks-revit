@@ -5,6 +5,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow: auto;
 }
 
 code {
@@ -12,31 +13,31 @@ code {
     monospace;
 }
 
-main {
+.mainContent {
   height: 100vh;
   width: 100%;
   padding: 0 5rem 0 0 !important;
 
-  overflow: auto;
+
 }
 
-main::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 7px;
   position: absolute;
   margin: 0;
 }
 
-main::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: #f1f1f1;
   width: 4px;
 }
 
-main::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #a8bdce;
   width: 4px;
   border-radius: 8px;
 }
 
-main::-webkit-scrollbar-thumb:hover {
-  background: #8badc9;
+body::-webkit-scrollbar-thumb:hover {
+  background: #b4d1e9;
 }
