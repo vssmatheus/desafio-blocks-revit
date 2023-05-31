@@ -1,12 +1,16 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import * as S from "./Cards.style";
+import CardCatalogo from "../CardCatalogo/CardCatalogo.component";
 
 const Cards = ({ data }) => {
   return (
-    <S.Container>
-      <>cards</>
-    </S.Container>
+    <>
+      <S.Title>Resultados</S.Title>
+      <S.Container>
+        <CardCatalogo />
+      </S.Container>
+    </>
   );
 };
 
