@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 80px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   width: 100%;
-  top: 0;
+  top: 67px;
   right: 0;
   border-radius: 0px;
   display: flex;
