@@ -6,19 +6,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow: auto;
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.mainContent {
-  height: 100vh;
-  width: 100%;
-  padding: 0 5rem 0 0 !important;
-
-
 }
 
 body::-webkit-scrollbar {
