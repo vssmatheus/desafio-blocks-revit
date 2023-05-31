@@ -2,16 +2,15 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import * as S from "./CardCatalogo.style";
 import { ArrowOutward } from "@mui/icons-material";
-import img from '../../../assets/logo-blocks.png';
+import img from '../../../assets/img-lustre.png';
 
-const CardCatalogo = ({ data }) => {
+const CardCatalogo = ({ data, description }) => {
   return (
     <S.Container>
       <img src={img} alt="ImageItem" />
       <S.CardFooter>
         <span>
-          Lorem Ipsum is sLorem Ipsum is simply Lorem Ipsum is sLorem Ipsum is
-          simply
+          {description}
         </span>
         <ArrowOutward />
       </S.CardFooter>
@@ -21,6 +20,7 @@ const CardCatalogo = ({ data }) => {
 
 CardCatalogo.propTypes = {
   data: PropTypes.array,
+  description: PropTypes.string,
 };
 
 export default CardCatalogo;

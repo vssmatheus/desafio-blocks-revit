@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
     <S.Container>
       <BannerPremium />
       <Header />
-      <div className="mainContent">{children}</div>
+      <div className="mainContent">
+        {children}
+      </div>
       <Footer />
     </S.Container>
   );

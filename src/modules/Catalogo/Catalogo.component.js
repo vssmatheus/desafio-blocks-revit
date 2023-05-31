@@ -5,22 +5,22 @@ import * as S from "./Catalogo.style";
 import HeaderBlock from "../../Common/HeaderBlock/HeaderBlock.component";
 
 const Catalogo = () => {
-  const users = useGetUsers();
-  const [dataUsers, setDataUsers] = useState([]);
+  const families = useGetUsers();
+  const [dataFamilies, setDataFamilies] = useState([]);
 
   useEffect(() => {
-    setDataUsers(users);
+    setDataFamilies(families);
     
     setInterval(() => {
-      setDataUsers(users); 
+      setDataFamilies(families); 
     }, 30000);
-  }, [users]);
+  }, [families]);
   
   return (
     <S.CatalogoSection>
       <HeaderBlock title={'Catálogo'}/>
       <S.Container>
-        <Cards data={dataUsers} />
+        <Cards data={dataFamilies} />
       </S.Container>
     </S.CatalogoSection>
   );
