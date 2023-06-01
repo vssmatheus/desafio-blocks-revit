@@ -17,6 +17,10 @@ export const Container = styled.button`
   );
   backdrop-filter: blur(20px);
   color: #ffffff;
+  font-weight: 600;
+font-size: 16px;
+  width: 230px;
+  transition: width 0.3s ease-in-out;
 
   &:hover {
     width: 294px;
@@ -45,9 +49,8 @@ export const Container = styled.button`
   }
 
   span {
-    font-weight: 600;
     font-size: 16px;
-    line-height: 22px;
+    min-width: 150px;
     margin-right: 15px;
   }
 `;

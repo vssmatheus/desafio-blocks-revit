@@ -39,6 +39,7 @@ const Cards = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [forceUpdate]);
 
   return (

@@ -30,4 +30,12 @@ export const Container = styled.div`
       background-image: linear-gradient(to bottom right, #a11cf3, #d835c5);
     }
   }
+
+  @media (max-width: 768px) {
+    top: 80px;
+    max-width: 100%;
+    h2 {
+      margin-left: 20px;
+    }
+  }
 `;
