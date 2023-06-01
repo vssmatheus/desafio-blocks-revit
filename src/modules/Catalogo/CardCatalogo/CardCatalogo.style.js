@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 176px;
+  min-width: 176px;
   min-height: 234px;
   border: solid 1px #cccccc;
   border-radius: 8px;
@@ -13,6 +13,10 @@ export const Container = styled.div`
     object-fit: contain;
     max-width: 100%;
     margin: -25% auto 0;
+  }
+
+  @media (max-width: 768px) {
+    min-width: 46%;
   }
 `;
 

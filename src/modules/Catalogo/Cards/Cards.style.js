@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 16px;
 `;
 
 export const Title = styled.h2`

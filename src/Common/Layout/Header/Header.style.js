@@ -13,11 +13,18 @@ export const Container = styled.div`
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid;
-  border-image: linear-gradient(to right, #A11CF3, #D835C5) 1;
-
+  border-image: linear-gradient(to right, #a11cf3, #d835c5) 1;
 
   img {
     width: 146px;
     height: 54px;
+  }
+
+  @media (max-width: 768px) {
+    top: 0;
+    img {
+      width: 91px;
+      height: 34px;
+    }
   }
 `;
